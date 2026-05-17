@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wander Stories – Travel. Discover. Inspire.</title>
+  
+  <!-- Typography and External Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ════════════════════════════════════════════════════════════
+       SITE HEADER
+       Contains the branding elements and corporate social links.
+       ════════════════════════════════════════════════════════════ -->
+  <header>
+    <div class="container">
+      
+      <!-- Brand Identity (Logo and Tagline) -->
+      <div class="site-brand">
+        <div class="logo-icon" aria-hidden="true">📷</div>
+        <div class="brand-text">
+          <h1>Wander Stories</h1>
+          <p>Travel. Discover. Inspire.</p>
+        </div>
+      </div>
+
+      <!-- Social Media Platform Anchors -->
+      <div class="social-links">
+        <a href="#" aria-label="Facebook">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+        <a href="#" aria-label="Twitter / X">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ════════════════════════════════════════════════════════════
+       NAVIGATION ARCHITECTURE
+       Primary desktop navigation menu and mobile menu triggers.
+       ════════════════════════════════════════════════════════════ -->
+  <nav aria-label="Primary navigation">
+    <div class="container">
+      
+      <!-- Desktop Navigation Interface Menu -->
+      <div class="nav-inner">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Mobile Hamburger Button Trigger -->
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Backdrop Overlay Plane -->
+  <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
+
+  <!-- Mobile Off-Canvas Navigation Slide Drawer Container -->
+  <div class="nav-drawer" id="nav-drawer" role="dialog" aria-modal="true" aria-label="Navigation menu">
+    <div class="nav-drawer-header">
+      <span>Wander Stories</span>
+      <button class="nav-drawer-close" id="nav-drawer-close" aria-label="Close menu">✕</button>
+    </div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Destinations</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════════
+       MAIN WRAPPER & PAGE BODY
+       Two-column grid system grouping main body posts and sidebar assets.
+       ════════════════════════════════════════════════════════════ -->
+  <div class="container page-body">
+
+    <!-- Primary Feed Stream Context (Left Column Grid Block) -->
+    <main>
+
+      <!-- Blog Feed Entry Item: 1 -->
+      <article>
+        <div class="post-thumb">
+          <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=440&q=80" alt="Majestic mountain range with a turquoise lake" />
+        </div>
+        <div class="post-body">
+          <h2 class="post-title">Exploring the Mountains</h2>
+          <div class="post-meta">
+            <span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <time datetime="2025-05-17">May 17, 2025</time>
+            </span>
+            <span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              by Erwan
+            </span>
+          </div>
+          <p class="post-excerpt">The mountains are calling and I must go. Here's my unforgettable experience hiking through the beautiful landscapes and discovering hidden gems.</p>
+          <a href="#" class="read-more">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Blog Feed Entry Item: 2 -->
+      <article>
+        <div class="post-thumb">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=440&q=80" alt="Tropical beach in Bali at sunset with a palm tree" />
+        </div>
+        <div class="post-body">
+          <h2 class="post-title">A Weekend in Bali</h2>
+          <div class="post-meta">
+            <span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <time datetime="2025-05-05">May 5, 2025</time>
+            </span>
+            <span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              by Erwan
+            </span>
+          </div>
+          <p class="post-excerpt">Bali is a paradise! From stunning beaches to vibrant culture, here's how I spent the perfect weekend in this beautiful island.</p>
+          <a href="#" class="read-more">Read More →</a>
+        </div>
+      </article>
+
+      <!-- Blog Feed Entry Item: 3 -->
+      <article>
+        <div class="post-thumb">
+          <img src="https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=440&q=80" alt="Kuala Lumpur Petronas Twin Towers illuminated at night" />
+        </div>
+        <div class="post-body">
+          <h2 class="post-title">City Lights: Kuala Lumpur</h2>
+          <div class="post-meta">
+            <span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              <time datetime="2025-04-20">April 20, 2025</time>
+            </span>
+            <span>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              by Erwan
+            </span>
+          </div>
+          <p class="post-excerpt">Kuala Lumpur at night is truly magical. Here are some must-visit places and tips for your next trip!</p>
+          <a href="#" class="read-more">Read More →</a>
+        </div>
+      </article>
+
+    </main>
+
+    <!-- Contextual Information Sidebar Panel (Right Column Grid Block) -->
+    <aside>
+
+      <!-- Section Component: Author Biography Widget -->
+      <section class="about-author">
+        <h3>About Me</h3>
+        <img class="author-avatar" src="myself.jpeg" alt="Portrait of Erwan, the blog author" />
+        <p>Hi! I'm Erwan, a travel enthusiast who loves exploring new places and sharing stories.</p>
+      </section>
+
+      <!-- Section Component: Chronological Post Index Quick Links -->
+      <section>
+        <h3>Recent Posts</h3>
+        <ul class="recent-posts-list">
+          <li>Exploring the Mountains</li>
+          <li>A Weekend in Bali</li>
+          <li>City Lights: Kuala Lumpur</li>
+          <li>Hidden Beaches</li>
+          <li>Street Food Adventure</li>
+        </ul>
+      </section>
+
+      <!-- Section Component: Taxonomy Tag Clouds and Categories -->
+      <section>
+        <h3>Categories</h3>
+        <ul class="category-list">
+          <li><a href="#">Travel Tips</a></li>
+          <li><a href="#">Destinations</a></li>
+          <li><a href="#">Food</a></li>
+          <li><a href="#">Adventures</a></li>
+          <li><a href="#">Photography</a></li>
+        </ul>
+      </section>
+
+    </aside>
+
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════════
+       SITE FOOTER
+       Contains information directory structure blocks and global copyright assertions.
+       ════════════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      
+      <!-- Global Info Multi-Column Grid Layout Segment -->
+      <div class="footer-grid">
+        
+        <!-- Grid Column: Mission Statement and Context Summary -->
+        <section aria-label="About this blog">
+          <h3>About This Blog</h3>
+          <p>Sharing travel stories, tips, and inspiration from around the world.</p>
+        </section>
+
+        <!-- Grid Column: Sitemap Reference Hyperlinks Index -->
+        <section aria-label="Quick links">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </section>
+
+        <!-- Grid Column: Contact Metrics Block -->
+        <section aria-label="Contact information">
+          <h3>Contact Me</h3>
+          <ul class="contact-list">
+            <li><span class="icon" aria-hidden="true">✉</span>hello@wanderstories.com</li>
+            <li><span class="icon" aria-hidden="true">📸</span>@wander.stories</li>
+            <li><span class="icon" aria-hidden="true">📍</span>Kuala Lumpur, Malaysia</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <!-- Copyright Sub-Footer Section Row -->
+      <div class="footer-bottom">
+        <p>© 2025 Wander Stories. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>
